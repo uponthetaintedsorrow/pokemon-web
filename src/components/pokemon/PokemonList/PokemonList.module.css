@@ -1,0 +1,11 @@
+/* Grid responsivo para la colección de cards. */
+.wrapper {
+  display: grid;
+  gap: 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}

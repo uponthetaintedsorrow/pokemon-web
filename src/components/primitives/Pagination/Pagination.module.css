@@ -1,0 +1,29 @@
+/* Controles de navegación entre páginas. */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ellipsis {
+  align-self: center;
+  color: var(--color-muted);
+  padding: 0 4px;
+}
+
+.info {
+  color: var(--color-muted);
+  font-size: var(--font-size-sm);
+}
+
+.active {
+  border-color: var(--color-secondary);
+}

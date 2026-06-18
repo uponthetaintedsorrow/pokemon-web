@@ -1,0 +1,10 @@
+/* Grupo compacto de botones para cambiar entre temas. */
+.toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.active {
+  border-color: var(--color-secondary);
+}

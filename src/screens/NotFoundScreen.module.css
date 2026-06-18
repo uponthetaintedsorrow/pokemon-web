@@ -1,0 +1,18 @@
+/* Layout simple para el 404 reutilizable. */
+.notFound {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+}

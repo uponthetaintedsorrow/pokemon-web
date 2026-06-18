@@ -1,0 +1,36 @@
+/* Estilos del badge compacto. */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.primary {
+  background: color-mix(in srgb, var(--color-primary) 18%, transparent);
+  color: var(--color-text);
+}
+
+.secondary {
+  background: color-mix(in srgb, var(--color-secondary) 20%, transparent);
+  color: var(--color-text);
+}
+
+.success {
+  background: color-mix(in srgb, var(--color-success) 20%, transparent);
+  color: var(--color-text);
+}
+
+.danger {
+  background: color-mix(in srgb, var(--color-danger) 20%, transparent);
+  color: var(--color-text);
+}
+
+.muted {
+  background: var(--color-surface-strong);
+  color: var(--color-muted);
+}

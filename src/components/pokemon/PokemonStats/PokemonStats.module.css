@@ -1,0 +1,5 @@
+/* Grid de estadísticas del pokemon. */
+.stats {
+  display: grid;
+  gap: 12px;
+}

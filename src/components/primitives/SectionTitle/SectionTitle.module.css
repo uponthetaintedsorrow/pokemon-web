@@ -1,0 +1,15 @@
+/* Tipografía y separación para títulos de bloque. */
+.sectionTitle {
+  display: grid;
+  gap: 6px;
+}
+
+.sectionTitle h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.sectionTitle p {
+  margin: 0;
+  color: var(--color-muted);
+}

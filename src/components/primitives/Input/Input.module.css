@@ -1,0 +1,40 @@
+/* Estilos del campo de texto y sus estados. */
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.input {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.input::placeholder {
+  color: var(--color-muted);
+}
+
+.errorInput {
+  border-color: var(--color-danger);
+}
+
+.helper,
+.error {
+  font-size: var(--font-size-sm);
+}
+
+.helper {
+  color: var(--color-muted);
+}
+
+.error {
+  color: var(--color-danger);
+}

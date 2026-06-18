@@ -1,0 +1,36 @@
+/* Hero de entrada con jerarquía simple y directa. */
+.landing {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.inner {
+  display: grid;
+  gap: 20px;
+  padding: 72px 0;
+}
+
+.copy {
+  max-width: 60ch;
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+}

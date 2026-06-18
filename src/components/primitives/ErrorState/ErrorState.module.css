@@ -1,0 +1,18 @@
+/* Estilos para mensajes de error claros. */
+.error {
+  display: grid;
+  gap: 12px;
+  place-items: center;
+  padding: 32px;
+  text-align: center;
+  border-color: color-mix(in srgb, var(--color-danger) 40%, var(--color-border));
+}
+
+.error h3,
+.error p {
+  margin: 0;
+}
+
+.error p {
+  color: var(--color-muted);
+}

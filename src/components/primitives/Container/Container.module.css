@@ -1,0 +1,6 @@
+/* Ancho máximo y padding consistente para páginas. */
+.container {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 32px);
+}

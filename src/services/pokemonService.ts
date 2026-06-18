@@ -1,0 +1,25 @@
+// Servicio mock que simula acceso a datos de pokemones y tipos.
+import { pokemonMock } from "@/mocks/pokemonMock";
+import { pokemonTypeMock } from "@/mocks/typeMock";
+import { adaptPokemonFromForm } from "@/features/pokemon/pokemonAdapters";
+import type { Pokemon, PokemonFormValues, PokemonTypeName } from "@/features/pokemon/pokemonTypes";
+
+function delay<T>(value: T, timeout = 120): Promise<T> {
+  return new Promise((resolve) => setTimeout(() => resolve(value), timeout));
+}
+
+export async function getPokemons(): Promise<Pokemon[]> {
+  return delay(pokemonMock);
+}
+
+export async function getPokemonTypes(): Promise<PokemonTypeName[]> {
+  return delay(pokemonTypeMock);
+}
+
+export async function getPokemonById(id: string): Promise<Pokemon | undefined> {
+  return delay(pokemonMock.find((pokemon) => pokemon.id === id));
+}
+
+export async function createPokemon(values: PokemonFormValues): Promise<Pokemon> {
+  return delay(adaptPokemonFromForm(values));
+}

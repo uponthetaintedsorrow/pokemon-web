@@ -1,0 +1,40 @@
+/* Cabecera principal responsive. */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 16px 0;
+  backdrop-filter: blur(18px);
+  background: color-mix(in srgb, var(--color-background) 78%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+}
+
+.inner {
+  display: grid;
+  gap: 16px;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.links,
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .inner {
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+  }
+
+  .tools {
+    justify-content: flex-end;
+  }
+}

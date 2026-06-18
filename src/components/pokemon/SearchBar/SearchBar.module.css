@@ -1,0 +1,12 @@
+/* Disposición compacta de la búsqueda. */
+.search {
+  display: grid;
+  gap: 8px;
+  min-width: min(100%, 320px);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}

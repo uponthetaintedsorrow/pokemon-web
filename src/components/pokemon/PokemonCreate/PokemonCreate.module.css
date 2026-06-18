@@ -1,0 +1,9 @@
+/* Contenedor de la pantalla de creación. */
+.create {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  padding: 24px;
+}

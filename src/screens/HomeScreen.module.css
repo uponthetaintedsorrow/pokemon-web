@@ -1,0 +1,6 @@
+/* Contenedor principal del Home con espaciado vertical. */
+.home {
+  display: grid;
+  gap: 24px;
+  padding: 32px 0 48px;
+}

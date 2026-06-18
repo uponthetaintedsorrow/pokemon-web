@@ -1,0 +1,47 @@
+/* Base global de layout, reset y estados comunes de la UI. */
+@import "./tokens.css";
+
+html {
+  min-height: 100%;
+  background: var(--color-background);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--color-text);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--color-background) 92%, var(--color-primary)), var(--color-background));
+  font-family: var(--font-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+#__next,
+body > div {
+  min-height: 100vh;
+}

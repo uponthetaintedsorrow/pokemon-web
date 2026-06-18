@@ -1,0 +1,55 @@
+/* Tokens globales y variables de tema para toda la aplicación. */
+:root {
+  --color-primary: #713485ff;
+  --color-secondary: #54acbeff;
+  --color-background: #272822;
+  --color-text: #f8f8f2;
+  --color-surface: #342f35;
+  --color-surface-strong: #41394a;
+  --color-border: #5c5460;
+  --color-muted: #b8b0bf;
+  --color-danger: #ff6b6b;
+  --color-success: #7ddc8a;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --font-base: var(--font-geist-sans), Arial, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.75rem;
+  --transition-fast: 180ms ease;
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 18px 34px rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme="berryLight"] {
+  --color-primary: #ca2557ff;
+  --color-secondary: #e8e7dbff;
+  --color-background: #e6e6e6;
+  --color-text: #000000;
+  --color-surface: #faf7f7;
+  --color-surface-strong: #ffffff;
+  --color-border: #cfc7c8;
+  --color-muted: #5b5456;
+  --color-danger: #b82049;
+  --color-success: #227a54;
+}
+
+html[data-theme="classicBattle"] {
+  --color-primary: #f44336;
+  --color-secondary: #2196f3;
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-surface: #f4f7fb;
+  --color-surface-strong: #ffffff;
+  --color-border: #d5d9e0;
+  --color-muted: #4f5a68;
+  --color-danger: #c62828;
+  --color-success: #2e7d32;
+}
